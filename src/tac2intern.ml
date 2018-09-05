@@ -166,7 +166,7 @@ let env_name env =
       ans
 
 let ltac2_env : environment Genintern.Store.field =
-  Genintern.Store.field ()
+  Genintern.Store.field Genintern.Store.default_merge_field
 
 let drop_ltac2_env store =
   Genintern.Store.remove store ltac2_env

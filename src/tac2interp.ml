@@ -16,7 +16,7 @@ open Tac2ffi
 
 exception LtacError = Tac2ffi.LtacError
 
-let backtrace : backtrace Evd.Store.field = Evd.Store.field ()
+let backtrace : backtrace Evd.Store.field = Evd.Store.field Evd.Store.default_merge_field
 
 let print_ltac2_backtrace = ref false
 
